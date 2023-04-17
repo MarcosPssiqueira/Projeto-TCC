@@ -5,8 +5,37 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cacalo Neto Delivery</title>
+  <link rel="stylesheet" href="/css/index.css">
+  <link rel="stylesheet" href="./css/menu.css">
 </head>
 <body>
-  
+
+    <button class="burger" id="burguer" onclick="toggleMenu()"></button>
+    <div class="menu">
+      <nav>
+        <a href="#" style="animation-delay: 0.2s">Início</a>
+        <a href="#" style="animation-delay: 0.3s">Sobre</a>
+        <a href="#" style="animation-delay: 0.5s">Contato</a>
+      </nav>
+    </div>
+    
+    <header>
+      <h1>Logo</h1>
+      <nav>
+        <ul>
+          <a href="#"><li>Início</li></a>
+          <a href="#"><li>Sobre</li></a>
+          <a href="#"><li>Contato</li></a>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      
+    </main>
+
+  <script type="text/javascript">
+    const toggleMenu = () => document.body.classList.toggle("open");
+  </script>
 </body>
 </html>
