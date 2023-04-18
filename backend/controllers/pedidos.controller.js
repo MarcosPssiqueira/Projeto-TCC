@@ -1,3 +1,5 @@
+const Pedido = require("../model/Pedido");
+
 module.exports = {
   post: async(req, res)=>{
     
@@ -8,13 +10,7 @@ module.exports = {
     }
     try {
       Pedido.create({
-        nomeCliente,
-        endereco,
-        observacao,
-        ingrediente,
-        sabor,
-        acompanhamento,
-        calda
+        nomeCliente
       })
       return res.status(200).json({msg: "Pedido feito com sucesso!"})
     } catch (error) {
