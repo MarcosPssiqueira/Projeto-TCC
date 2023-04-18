@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cacalo Neto Delivery</title>
+</head>
+<body>
+    <link rel="stylesheet" href="./css/menu.css">
+  <link rel="stylesheet" href="./css/principal.css">
+  <link rel="stylesheet" href="./css/pedidos.css">
+</head>
+
+<body>
+  <header>
+
+    <div id="responsiveMenu">
+      <button class="burger" id="burguer" onclick="toggleMenu()"></button>
+      <div class="menu">
+        <nav>
+          <a href="#" style="animation-delay: 0.2s">Início</a>
+          <a href="#" style="animation-delay: 0.3s">Sobre</a>
+          <a href="#" style="animation-delay: 0.5s">Contato</a>
+        </nav>
+      </div>
+    </div>
+
+    <div id="menu">
+      <nav>
+        <ul>
+          <a href="#"><li>Início</li></a>
+          <a href="#"><li>Sobre</li></a>
+          <a href="#"><li>Contato</li></a>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <div class="container">
+    
+        <h1>Faça o seu pedido</h1>
+       <form>
+        <label> Nome do cliente:  </label>
+         <input type="text" > 
+        
+         <div class="produto">
+        <label for="">Produto:</label>
+        <input type="text" readonly value="Açai" >  
+        </div>
+    
+
+        <label for="">Forma de pagamento:</label>
+        
+        <div class="pagamentos">
+         <div> 
+        <label >Cartão</label>
+        <input type="radio" value="cartão" > 
+        </div>
+
+       <div>
+        <label >Dinheiro</label> 
+        <input type="radio"  value="dinheiro" > 
+
+       </div>
+
+       <div>
+        <label >Pix</label> 
+        <input type="radio"  value="pix" > 
+
+       </div>
+       
+        </div>
+        
+        <label> Endereço do cliente:</label>
+        <input type="text" > 
+
+      <div class="observacao">  
+        <label> Observaçoes: </label>
+        <input  type="text" > 
+          </div>
+        <button class="button-container"  type="submit" >Enviar </button>
+       </form>
+
+
+    <div>
+
+   
+  </main>
+
+  <footer>
+    <div>
+      <h2>Lorem Ipsum</h2>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est, quo! Voluptas dolore corporis nihil molestiae velit rerum, ratione iusto </p>
+    </div>
+    <div>
+      <h2>Nossas redes sociais</h2>
+      <ul>
+        <a href="#"><li><img src="./images/icon-facebook.png" alt=""></li></a>
+        <a href="#"><li><img src="./images/icon-twitter.png" alt=""></li></a>
+        <a href="#"><li><img src="./images/icon-whatsapp.png" alt=""></li></a>
+      </ul>
+    </div>
+  </footer>
+
+  <script type="text/javascript">
+    const toggleMenu = () => document.body.classList.toggle("open");
+  </script>
+</body>
+</body>
+</html>
