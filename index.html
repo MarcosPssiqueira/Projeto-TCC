@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cacalo Neto Delivery</title>
-  <link rel="stylesheet" href="/css/index.css">
   <link rel="stylesheet" href="./css/menu.css">
+  <link rel="stylesheet" href="/css/principal.css">
 </head>
-<body>
 
-    <button class="burger" id="burguer" onclick="toggleMenu()"></button>
-    <div class="menu">
-      <nav>
-        <a href="#" style="animation-delay: 0.2s">Início</a>
-        <a href="#" style="animation-delay: 0.3s">Sobre</a>
-        <a href="#" style="animation-delay: 0.5s">Contato</a>
-      </nav>
+<body>
+  <header>
+
+    <div id="responsiveMenu">
+      <button class="burger" id="burguer" onclick="toggleMenu()"></button>
+      <div class="menu">
+        <nav>
+          <a href="#" style="animation-delay: 0.2s">Início</a>
+          <a href="#" style="animation-delay: 0.3s">Sobre</a>
+          <a href="#" style="animation-delay: 0.5s">Contato</a>
+        </nav>
+      </div>
     </div>
-    
-    <header>
-      <h1>Logo</h1>
+
+    <div id="menu">
       <nav>
         <ul>
           <a href="#"><li>Início</li></a>
@@ -28,14 +32,49 @@
           <a href="#"><li>Contato</li></a>
         </ul>
       </nav>
-    </header>
+    </div>
+  </header>
 
-    <main>
-      
-    </main>
+  <main>
+
+    <section>
+      <h2>Açaí</h2>
+      <img src="./images/acai.jpg" alt="">
+      <button>Faça seu pedido</button>
+    </section>
+
+    <section>
+      <h2>Sorvete</h2>
+      <img src="./images/sorvete.jpg" alt="">
+      <button>Faça seu pedido</button>
+    </section>
+
+    <section>
+      <h2>Milkshake</h2>
+      <img src="./images/milkshake.jpg" alt="">
+      <button>Faça seu pedido</button>
+    </section>
+
+  </main>
+
+  <footer>
+    <div>
+      <h2>Lorem Ipsum</h2>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est, quo! Voluptas dolore corporis nihil molestiae velit rerum, ratione iusto </p>
+    </div>
+    <div>
+      <h2>Nossas redes sociais</h2>
+      <ul>
+        <a href="#"><li><img src="./images/icon-facebook.png" alt=""></li></a>
+        <a href="#"><li><img src="./images/icon-twitter.png" alt=""></li></a>
+        <a href="#"><li><img src="./images/icon-whatsapp.png" alt=""></li></a>
+      </ul>
+    </div>
+  </footer>
 
   <script type="text/javascript">
     const toggleMenu = () => document.body.classList.toggle("open");
   </script>
 </body>
+
 </html>
