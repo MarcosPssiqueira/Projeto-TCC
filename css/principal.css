@@ -1,0 +1,128 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: darkorchid;
+}
+#responsiveMenu{
+  height: 10vh;
+}
+#menu{
+  display: none;
+  padding: 36px 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.7358718487394958) 0%, rgba(233, 233, 109, 0) 100%);
+  background-color: darkorchid;
+}
+nav ul{
+  display: flex;
+  gap: 4rem;
+  list-style: none;
+}
+#menu ul a{
+  text-decoration: none;
+  color: rgb(214, 214, 214);
+  font-size: 1.8rem;
+}
+#menu ul a:hover{
+  color: white;
+}
+
+main{
+  height: 100vh;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+main section{
+  width: 300px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  gap: 10px;
+  color: black;
+  padding: 15px;
+}
+main section img{
+  width: 100%;
+}
+main section button{
+  border: 1px solid gold;
+  border-radius: 10px;
+  padding: 10px 26px;
+  transition: .2s;
+}
+main section button:hover{
+  background-color: gold;
+  color: white;
+}
+
+footer{
+  height: 45vh;
+  background-color: rgb(24, 24, 24);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 16px;
+  border-top: 1px solid gold;
+}
+
+footer div:nth-child(2){
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+footer ul{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  list-style:none;
+  color: white;
+}
+footer ul a{
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 1019px){
+  main{
+    height: auto;
+  }
+}
+
+@media (min-width: 400px){
+  #menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  } 
+  #responsiveMenu{
+    display: none;
+  }
+
+  main{
+    flex-direction:row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+  }
+
+  footer{
+    flex-direction: row;
+    height: 30vh;
+  }
+  footer div:nth-child(1){
+    width: 40%;
+  }
+}

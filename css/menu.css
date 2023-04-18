@@ -26,15 +26,17 @@ button {
 
 .burger {
   z-index: 3;
-  top: 0;
-  left: 0;
+  top: 10px;
+  left: 10px;
   display: grid;
   place-items: center;
-  width: 88px;
-  height: 88px;
+  width: 48px;
+  height: 48px;
   background-image: url("../images/menu.svg");
   background-repeat: no-repeat;
   background-position: center;
+  background-color: black;
+  border-radius: 50%;
 }
 
 body.open .burger {
@@ -49,7 +51,8 @@ body.open .burger {
   place-items: center;
   width: 400px;
   height: 100%;
-  background: #07030a;
+  background: #07030ac5;
+  backdrop-filter: blur(10px);
   translate: -100% 0;
   transition: translate 0.375s cubic-bezier(0.175, 0.885, 0.32, 1);
 }
@@ -149,8 +152,8 @@ body.open .menu a {
   }
 }
 
-@media (min-width: 900px){
-  #burguer{
+@media (min-width: 400px){
+  #burguer, .menu{
     display: none;
   }
 }
