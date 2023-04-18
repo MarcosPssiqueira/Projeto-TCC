@@ -3,18 +3,22 @@ const Pedido = require("../model/Pedido");
 module.exports = {
   post: async(req, res)=>{
     
-    const {nomeCliente, endereco, observacao, ingrediente, sabor, acompanhamento, calda} = req.body;
+    const {nomeCliente, nomeProduto, formaPagamento, enderecoCliente, observacoes} = req.body;
     
-    if(!nomeCliente || !endereco || !ingrediente || !sabor || !acompanhamento|| !calda){
+    if(!nomeCliente || !nomeProduto || !formaPagamento || !enderecoCliente || !observacoes){
       return res.status(422).json({msg: "Preencha todos os campos."});
     }
     try {
-      Pedido.create({
-        nomeCliente
+      await Pedido.create({
+        nomeCliente,
+        nomeProduto,
+        formaPagamento,
+        enderecoCliente,
+        observacoes
       })
       return res.status(200).json({msg: "Pedido feito com sucesso!"})
     } catch (error) {
-      return json(error)
+      return console.log(error)
     }
   }
 }

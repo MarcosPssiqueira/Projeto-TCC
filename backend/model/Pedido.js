@@ -10,6 +10,18 @@ const Pedido = db.define("pedido", {
   nomeCliente: {
     type: DataTypes.STRING
   }, 
+  nomeProduto: {
+    type: DataTypes.STRING
+  },
+  formaPagamento: {
+    type: DataTypes.STRING
+  },
+  enderecoCliente: {
+    type: DataTypes.STRING
+  },
+  observacoes: {
+    type: DataTypes.STRING
+  }
 },{
   timestamps: false
 });
