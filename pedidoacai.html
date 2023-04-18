@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cacalo Neto Delivery</title>
-  <link rel="stylesheet" href="./css/menu.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cacalo Neto Delivery</title>
+</head>
+<body>
+    <link rel="stylesheet" href="./css/menu.css">
   <link rel="stylesheet" href="./css/principal.css">
+  <link rel="stylesheet" href="./css/pedidos.css">
 </head>
 
 <body>
@@ -37,24 +39,55 @@
 
   <main>
 
-    <section>
-      <h2>Açaí</h2>
-      <img src="./images/acai.jpg" alt="">
-      <a href="./pedidoacai.html"> <button>Faça seu pedido</button> </a> 
-    </section>
+    <div class="container">
+    
+        <h1>Faça o seu pedido</h1>
+       <form>
+        <label> Nome do cliente:  </label>
+         <input type="text" > 
+        
+         <div class="produto">
+        <label for="">Produto:</label>
+        <input type="text" readonly value="Açai" >  
+        </div>
+    
 
-    <section>
-      <h2>Sorvete</h2>
-      <img src="./images/sorvete.jpg" alt="">
-     <a href="./pedidoacai.html"> <button>Faça seu pedido</button> </a> 
-    </section>
+        <label for="">Forma de pagamento:</label>
+        
+        <div class="pagamentos">
+         <div> 
+        <label >Cartão</label>
+        <input type="radio" value="cartão" > 
+        </div>
 
-    <section>
-      <h2>Milkshake</h2>
-      <img src="./images/milkshake.jpg" alt="">
-     <a href="./pedidoacai.html" > <button>Faça seu pedido</button>  </a> 
-    </section>
+       <div>
+        <label >Dinheiro</label> 
+        <input type="radio"  value="dinheiro" > 
 
+       </div>
+
+       <div>
+        <label >Pix</label> 
+        <input type="radio"  value="pix" > 
+
+       </div>
+       
+        </div>
+        
+        <label> Endereço do cliente:</label>
+        <input type="text" > 
+
+      <div class="observacao">  
+        <label> Observaçoes: </label>
+        <input  type="text" > 
+          </div>
+        <button class="button-container"  type="submit" >Enviar </button>
+       </form>
+
+
+    <div>
+
+   
   </main>
 
   <footer>
@@ -76,5 +109,5 @@
     const toggleMenu = () => document.body.classList.toggle("open");
   </script>
 </body>
-
+</body>
 </html>
