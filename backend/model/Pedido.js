@@ -13,6 +13,9 @@ const Pedido = db.define("pedido", {
   nomeProduto: {
     type: DataTypes.STRING
   },
+  sabor: {
+    type: DataTypes.STRING
+  },
   formaPagamento: {
     type: DataTypes.STRING
   },
