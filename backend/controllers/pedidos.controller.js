@@ -3,7 +3,7 @@ const Pedido = require("../model/Pedido");
 module.exports = {
   post: async(req, res)=>{
     
-    const {nomeCliente, nomeProduto, sabor, formaPagamento, enderecoCliente, observacoes} = req.body;
+    const {nomeCliente, nomeProduto, sabor, ingredientes, formaPagamento, enderecoCliente, observacoes} = req.body;
     
     if(!nomeCliente || !nomeProduto || !formaPagamento  || !enderecoCliente || !observacoes){
       return res.status(422).json({msg: "Preencha todos os campos."});
@@ -13,6 +13,7 @@ module.exports = {
         nomeCliente,
         nomeProduto,
         sabor,
+        ingredientes,
         formaPagamento,
         enderecoCliente,
         observacoes

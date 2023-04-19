@@ -43,9 +43,11 @@ p{
   align-self: flex-start;
 
 }
-#sabor, #ingredientes{
+#sabor, #ingredientesWrap{
   display: flex;
   flex-direction: column;
+  align-items: center;
+  width: 100%;
 
 }
 #saborWrap, #ingredientesWrap {
